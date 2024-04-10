@@ -7,6 +7,8 @@ let seconds = 11;
 let newYear = document.getElementById("new-year");
 // log alla console
 console.log(newYear);
+// messaggio al termine del countdown
+let newYearMsg = "Buon anno!"
 
 
 // Creo il clock invertito che esegue la funzione ad intervalli di 1 sec
@@ -20,6 +22,14 @@ const clock = setInterval(function () {
     console.log(seconds);
     // inseriamo il valore anche in pagina
     document.getElementById("second").innerText = seconds;
+
+    // Se il clock raggiunge i 0 secondi
+    if (seconds <= 0) {
+        // log alla console
+        console.log(newYearMsg);
+        // aggiungi il messeggio all'elemento HTML
+        newYear.append(newYearMsg)
+    }
 }, 1000);
 
 // Creo la funzione di timeout che passati i secondi impostati (11 sec), ferma il countdown

@@ -19,3 +19,8 @@
     border: 1px solid black;
   }
 
+  #new-year{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+  }
