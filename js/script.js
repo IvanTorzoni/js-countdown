@@ -17,6 +17,9 @@ const clock = setInterval(function () {
     document.getElementById("second").innerText = seconds;
 }, 1000);
 
-
+// Creo la funzione di timeout che passati i secondi impostati (11 sec), ferma il countdown
+setTimeout(function () {
+    clearInterval(clock)
+}, 11000);
 
 
