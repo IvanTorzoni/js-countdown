@@ -3,6 +3,11 @@
 
 // Creo una variabile per i secondi del countdown (sono stati inseriti 11 sec per visualizzare concretamente i 10 secondi all' avvio della pagina)
 let seconds = 11;
+// Cerco l'elemento ad HTML
+let newYear = document.getElementById("new-year");
+// log alla console
+console.log(newYear);
+
 
 // Creo il clock invertito che esegue la funzione ad intervalli di 1 sec
 const clock = setInterval(function () {
