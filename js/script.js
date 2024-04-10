@@ -29,6 +29,8 @@ const clock = setInterval(function () {
         console.log(newYearMsg);
         // aggiungi il messeggio all'elemento HTML
         newYear.append(newYearMsg)
+        // Richiamo la funzione per il suono
+        play()
     }
 }, 1000);
 
@@ -36,5 +38,3 @@ const clock = setInterval(function () {
 setTimeout(function () {
     clearInterval(clock)
 }, 11000);
-
-
